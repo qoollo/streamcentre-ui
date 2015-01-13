@@ -1,0 +1,28 @@
+#stream-view {
+  position: fixed;
+  top: 51px;
+  bottom: 0px;
+  right: 0px;
+  width: 600px;
+  border-left: 1px solid #bbb; }
+  #stream-view #video-container {
+    position: relative;
+    width: 100%;
+    background: #000;
+    padding: 10px 0px; }
+    #stream-view .nav {
+      margin: 10px; }
+
+#stream-list {
+  position: absolute;
+  right: 599px;
+  left: 0px;
+  top: 51px; }
+  #stream-list #list-container {
+    margin: 10px 0px 10px 20px; }
+    #stream-list #list-container tbody tr:hover {
+      background: #eee;
+      cursor: pointer; }
+      #stream-list #list-container tbody tr.selected {
+        background: #fff7dc;
+        cursor: auto; }

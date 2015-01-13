@@ -1,0 +1,52 @@
+$stream-view-width: 600px;
+$header-height: 51px;
+
+$hover-color: #eee;
+$selected-color: #fff7dc;
+
+$view-border: 1px solid #bbb;
+$cinema-background: #000;
+
+
+#stream-view {
+    position: fixed;
+    top: $header-height;
+    bottom: 0px;
+    right: 0px;
+    width: $stream-view-width;
+    border-left: $view-border;
+
+    #video-container {
+        position: relative;
+        width: 100%;
+        background: $cinema-background;
+        padding: 10px 0px;
+    }
+
+    .nav {
+        margin: 10px;
+    }
+}
+
+#stream-list {
+    position: absolute;
+    right: $stream-view-width - 1;
+    left: 0px;
+    top: $header-height;
+
+    #list-container {
+        margin: 10px 0px 10px 20px;
+
+        tbody tr {
+            &:hover {
+                background: $hover-color;
+                cursor: pointer;
+            }
+
+            &.selected {
+                background: $selected-color;
+                cursor: auto;
+            }
+        }
+    }
+}
